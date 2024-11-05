@@ -1,3 +1,4 @@
+import { UserButton } from "@clerk/nextjs";
 import { auth } from "@clerk/nextjs/server";
 
 export default async function HomePage() {
@@ -5,7 +6,10 @@ export default async function HomePage() {
 
   return (
     <main className="flex h-screen items-center justify-center">
-      <p>Hello World</p>
+      <div>
+        <p>Member App</p>
+        <UserButton />
+      </div>
     </main>
   );
 }

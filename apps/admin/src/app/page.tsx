@@ -1,3 +1,4 @@
+import { OrganizationSwitcher, UserButton } from "@clerk/nextjs";
 import { auth } from "@clerk/nextjs/server";
 
 export default async function HomePage() {
@@ -5,7 +6,15 @@ export default async function HomePage() {
 
   return (
     <main className="flex h-screen items-center justify-center">
-      <p>Hello World</p>
+      <div>
+        <p>Admin App</p>
+        <div>
+          <UserButton />
+        </div>
+        <div>
+          <OrganizationSwitcher />
+        </div>
+      </div>
     </main>
   );
 }
