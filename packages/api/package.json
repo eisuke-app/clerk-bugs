@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@acme/db": "workspace:*",
+    "@clerk/nextjs": "^6.2.0",
     "@trpc/server": "catalog:",
     "superjson": "2.2.1",
     "zod": "catalog:"
